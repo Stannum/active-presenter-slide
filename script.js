@@ -31,8 +31,11 @@ const questionList = [
     },
     {
         subtitle: 'Talking about diversity',
-        questions: ['Have you observed any cultural differences when you interview candidates with different backgrounds?',
-                    'What is your opinion on diversity when recruiting STEM roles?', 
+        questions: ['Have you observed any cultural differences when you interview candidates with different backgrounds?'],
+    },
+    {
+        subtitle: 'Talking about diversity',
+        questions: ['What is your opinion on diversity when recruiting STEM roles?', 
                     'What strategies will you apply to recruit the minority groups ? Oversampling? Lowering the bar?'],
     },
 ];
