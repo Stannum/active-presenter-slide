@@ -115,7 +115,7 @@ $('.guest-p').on('click', function(e) {
     $(e.target).closest('.col-3').find('svg').css('color','#0d6efd')
 })
 
-$('ul').on('click', function(e) {
+$('ol').on('click', function(e) {
     e.preventDefault()
     resetQColor()
     $(e.target).addClass('q-primary')
