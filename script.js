@@ -1,42 +1,46 @@
 const questionList = [
     {
+        subtitle: 'Meet our panel',
+        questions: [],
+    },
+    
+    {
         subtitle: 'It all started when ...',
-        questions: ['What made you become an interviewer?', 
-                    'How would you describe the first few interviews you gave?'
+        questions: ['1. What made you become an interviewer?', 
+                    '   How would you describe the first few interviews you gave?'
                    ],
     },
 
     {
         subtitle: 'Recruiting talents',
-        questions:[
-        'How to reveal the real capability of the candidates?', 
-            'Could you share some special techniques you would apply, e.g, stress interview?'
+        questions:['2. How to reveal the real capability of the candidates?', 
+            '   Could you share some special techniques you would apply, e.g, stress interview?'
         ]
     },
 
     {
         subtitle: 'Recruiting talents',
-        questions: ['What are the red flags to which you would definitely say no ?'
+        questions: ['3. What are the red flags to which you would definitely say no ?'
         ],
     },
      {
          subtitle:'Recruiting talents',
-         questions: ['How do you think the probation period could help the overall recruitment process ?', 
-                     'Do you prefer more rounds of interviews plus a short probation period or the other way around?'
+         questions: ['4. How do you think the probation period could help the overall recruitment process ?', 
+                     '   Do you prefer more rounds of interviews plus a short probation period or the other way around?'
                     ],
     },
     {
         subtitle:'Recruiting talents',
-        questions: ['Who from a team will you choose to interview the candidates, in order to get a comprehensive feedback?'],
+        questions: ['5. Who from a team will you choose to interview the candidates, in order to get a comprehensive feedback?'],
     },
     {
         subtitle: 'Talking about diversity',
-        questions: ['Have you observed any cultural differences when you interview candidates with different backgrounds?'],
+        questions: ['6. Have you observed any cultural differences when you interview candidates with different backgrounds?'],
     },
     {
         subtitle: 'Talking about diversity',
-        questions: ['What is your opinion on diversity when recruiting STEM roles?', 
-                    'What strategies will you apply to recruit the minority groups ? Oversampling? Lowering the bar?'],
+        questions: ['7. What is your opinion on diversity when recruiting STEM roles?', 
+                    '   What strategies will you apply to recruit the minority groups ? Oversampling? Lowering the bar?'],
     },
 ];
 
