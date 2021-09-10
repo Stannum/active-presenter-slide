@@ -6,41 +6,41 @@ const questionList = [
     
     {
         subtitle: 'It all started when ...',
-        questions: ['What made you become an interviewer?', 
-                    'How would you describe the first few interviews you gave?'
+        questions: ['1a. What made you become an interviewer?', 
+                    '1b. How would you describe the first few interviews you gave?'
                    ],
     },
 
     {
         subtitle: 'Recruiting talents',
-        questions:['How to reveal the real capability of the candidates?', 
-            'Could you share some special techniques you would apply, e.g, stress interview?'
+        questions:['2a. How to reveal the real capability of the candidates?', 
+            '2b. Could you share some special techniques you would apply, e.g, stress interview?'
         ]
     },
 
     {
         subtitle: 'Recruiting talents',
-        questions: ['What are the red flags to which you would definitely say no ?'
+        questions: ['3. What are the red flags to which you would definitely say no ?'
         ],
     },
      {
          subtitle:'Recruiting talents',
-         questions: ['How do you think the probation period could help the overall recruitment process ?', 
-                     'Do you prefer more rounds of interviews plus a short probation period or the other way around?'
+         questions: ['4a. How do you think the probation period could help the overall recruitment process ?', 
+                     '4b. Do you prefer more rounds of interviews plus a short probation period or the other way around?'
                     ],
     },
     {
         subtitle:'Recruiting talents',
-        questions: ['Who from a team will you choose to interview the candidates, in order to get a comprehensive feedback?'],
+        questions: ['5. Who from a team will you choose to interview the candidates, in order to get a comprehensive feedback?'],
     },
     {
         subtitle: 'Talking about diversity',
-        questions: ['Have you observed any cultural differences when you interview candidates with different backgrounds?'],
+        questions: ['6. Have you observed any cultural differences when you interview candidates with different backgrounds?'],
     },
     {
         subtitle: 'Talking about diversity',
-        questions: ['What is your opinion on diversity when recruiting STEM roles?', 
-                    'What strategies will you apply to recruit the minority groups ? Oversampling? Lowering the bar?'],
+        questions: ['7a. What is your opinion on diversity when recruiting STEM roles?', 
+                    '7b. What strategies will you apply to recruit the minority groups ? Oversampling? Lowering the bar?'],
     },
 ];
 
@@ -49,7 +49,7 @@ let currQues = ''
 
 const renderQ = function() {
 
-    $('.q-text ol').empty()
+    $('.q-text ul').empty()
 
     if (currQuesIdx >= 0 && currQuesIdx < questionList.length) {
         currQues = questionList[currQuesIdx]; 
@@ -67,7 +67,7 @@ const renderQ = function() {
     $('.q-text p').text(currQues.subtitle)
 
     currQues.questions.forEach(function(question) {
-        $('.q-text ol').append(`<li>${question}</li>`)
+        $('.q-text ul').append(`<li>${question}</li>`)
     })
 }
 
@@ -89,10 +89,7 @@ const resetQColor = function() {
 
 
 $('.right-nav').on('click', function(e) {
-    e.preventDefa
-    
-    
-    t()
+    e.preventDefault()
     currQuesIdx += 1
     renderQ()
     resetQColor()
@@ -115,7 +112,7 @@ $('.guest-p').on('click', function(e) {
     $(e.target).closest('.col-3').find('svg').css('color','#0d6efd')
 })
 
-$('ol').on('click', function(e) {
+$('ul').on('click', function(e) {
     e.preventDefault()
     resetQColor()
     $(e.target).addClass('q-primary')
